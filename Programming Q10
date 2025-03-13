@@ -1,0 +1,11 @@
+n=int(input())
+p=n
+s=0
+while(n>0):
+    x=float(input())
+    s+=x
+    n-=1
+a=s/p
+print(f"The average is: {a:.3f}")
+    
+    
