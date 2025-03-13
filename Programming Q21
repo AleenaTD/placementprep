@@ -1,0 +1,8 @@
+s=input()
+s1=input()
+l=set(s)
+l1=set(s1)
+if l==l1:
+    print("true")
+else:
+    print("false")
