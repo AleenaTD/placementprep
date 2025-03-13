@@ -1,0 +1,11 @@
+n=int(input())
+l=[int(x)for x in input().split()]
+j=[]
+for i in l:
+    if i in j:
+        print("true")
+        break
+    else:
+        j.append(i)
+else:
+    print("false")
