@@ -1,0 +1,19 @@
+n= int(input())
+l=[int(x)for x in input().split()]
+t=int(input())
+i=0
+j=n-1
+f=0
+while i<j:
+    s=l[i]+l[j]
+    if s>t:
+        j=j-1
+    elif s<t:
+        i=i+1
+    else:
+        f=1
+        print("Yes")
+        break
+if f==0:
+    print("No")
+    
