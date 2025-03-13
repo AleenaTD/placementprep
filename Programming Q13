@@ -1,0 +1,30 @@
+n,m=map(int,input().split())
+ma=[]
+for i in range(n):
+    l=list(map(int,input().split()))
+    ma.append(l)   
+ma1=[]    
+for i in range(n):
+    l=list(map(int,input().split()))
+    ma1.append(l)
+print("First Matrix:")
+for i in ma:
+    print(*i)
+print("Second Matrix:")
+for i in ma1:
+    print(*i)  
+a=[]
+l=[]
+for i in range(n):
+    for j in range(m):
+        s=ma[i][j]+ma1[i][j]
+        l.append(s)
+    a.append(l)
+    l=[]
+print("Sum of the two matrices is:")
+for i in a:
+    print(*i)    
+    
+    
+    
+    
