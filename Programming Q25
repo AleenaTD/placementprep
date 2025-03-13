@@ -1,0 +1,12 @@
+l=list(map(int,input().split(",")))
+l.sort()
+k=int(input())
+c=len(l)-k
+v=float("inf")
+for i in range(c+1):
+    m=l[i:i+k]
+    p=max(m)-min(m)
+    if p<v:
+        v=p
+        j=m
+print(*j)        
