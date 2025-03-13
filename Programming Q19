@@ -1,0 +1,12 @@
+s=input().upper()
+t=0
+f=0
+for i in s:
+    if i=="C" or i=="U":
+        t=t+1
+    if i=="R" or i=="L":
+        t=t-1
+    if t>f:
+        f=t
+print(f)        
+        
