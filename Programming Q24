@@ -1,0 +1,12 @@
+l=list(map(int,input().split(",")))
+q=l[0]
+mpro=0
+x=l[0]
+for i in l:
+    if i<x:
+        x=i
+    pro=i-x
+    if pro>mpro:
+        mpro=pro
+print(mpro)        
+       
